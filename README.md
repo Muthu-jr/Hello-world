@@ -28,19 +28,19 @@ Automated Web App Deployment: CI/CD with Kubernetes and Docker
 * **First Overview (Traditional Deployment):**
     
 
-* "This guide explains how we deploy a web app by storing code on GitHub, building with Maven, and using Jenkins and Tomcat for automation.
+ "This guide explains how we deploy a web app by storing code on GitHub, building with Maven, and using Jenkins and Tomcat for automation.
     
 
-* ![](Automated Web App Deployment CICD with Kubernetes and Docker files\Screenshot (14).png)
+  ![](https://github.com/Muthu-jr/Hello-world/blob/12caa4e4b19bd13f83b0ea52b1a1847431a78b0e/Architecture%20Flow%20Images/Deploy%20On%20VM.png)
     
 
 * **Second Overview (Dockerized Deployment):**
     
 
-* "Here, we detail deploying a web app with a strong CI/CD pipeline,used GitHub for versioning, Jenkins for automation, Maven for building, and Docker for orchestration. Docker enhances consistency across different environments, making deployment more portable."
+  "Here, we detail deploying a web app with a strong CI/CD pipeline,used GitHub for versioning, Jenkins for automation, Maven for building, and Docker for orchestration. Docker enhances consistency across different environments, making deployment more portable."
     
 
-* ![](Automated Web App Deployment CICD with Kubernetes and Docker files\Docker Deployment.png)
+ ![](https://github.com/Muthu-jr/Hello-world/blob/12caa4e4b19bd13f83b0ea52b1a1847431a78b0e/Architecture%20Flow%20Images/Docker%20Deployment.png)
     
 
   
@@ -48,10 +48,10 @@ Automated Web App Deployment: CI/CD with Kubernetes and Docker
 * **Third Overview (Docker and Ansible Deployment):**
     
 
-* "This guide covers deploying a web app with a robust CI/CD pipeline, using GitHub for versioning, Maven for building, Tomcat for the server, and automation through Docker and Ansible. Docker ensures efficiency through containerization, while Ansible helps with seamless configuration management."
+  "This guide covers deploying a web app with a robust CI/CD pipeline, using GitHub for versioning, Maven for building, Tomcat for the server, and automation through Docker and Ansible. Docker ensures efficiency through containerization, while Ansible helps with seamless configuration management."
     
 
-* ![](Automated Web App Deployment CICD with Kubernetes and Docker files\Screenshot (17).png)
+ ![](https://github.com/Muthu-jr/Hello-world/blob/12caa4e4b19bd13f83b0ea52b1a1847431a78b0e/Architecture%20Flow%20Images/Deploy%20a%20container%20using%20ansible.png)
     
 
   
@@ -59,10 +59,10 @@ Automated Web App Deployment: CI/CD with Kubernetes and Docker
 * **Fourth Overview (Kubernetes Deployment):**
     
 
-* "This documentation explains deploying a Java web app seamlessly using Kubernetes, Git, Jenkins, Maven, Tomcat, Docker, and Ansible,successfully utilized Kubernetes for orchestration, enabling efficient scaling, updates, and high availability."
+  "This documentation explains deploying a Java web app seamlessly using Kubernetes, Git, Jenkins, Maven, Tomcat, Docker, and Ansible,successfully utilized Kubernetes for orchestration, enabling efficient scaling, updates, and high availability."
     
 
-* ![](Automated Web App Deployment CICD with Kubernetes and Docker files\Screenshot (18).png)
+ ![](https://github.com/Muthu-jr/Hello-world/blob/12caa4e4b19bd13f83b0ea52b1a1847431a78b0e/Architecture%20Flow%20Images/Deploy%20as%20a%20pod.png)
     
 
   
@@ -72,39 +72,39 @@ Automated Web App Deployment: CI/CD with Kubernetes and Docker
 * **Source Code Management:**
     
 
-* The web application source code is stored in the GitHub repository: [https://github.com/Muthu-jr?tab=repositories](https://github.com/Muthu-jr?tab=repositories).
+  The web application source code is stored in the GitHub repository: [https://github.com/Muthu-jr?tab=repositories](https://github.com/Muthu-jr?tab=repositories).
     
 
 * **Continuous Integration/Continuous Deployment (CI/CD) Pipeline:**
     
 
-* Jenkins is configured to pull the latest code from the GitHub repository.
+  Jenkins is configured to pull the latest code from the GitHub repository.
     
-* Maven is used for building the Java web application.
+  Maven is used for building the Java web application.
     
-* The build artifacts are then containerized using Docker.
+  The build artifacts are then containerized using Docker.
     
 
 * **Infrastructure as Code (IaC):**
     
 
-* Ansible automates the setup and configuration of the target environment.
+  Ansible automates the setup and configuration of the target environment.
     
-* Kubernetes manifests define the desired state of the application within the cluster.
+  Kubernetes manifests define the desired state of the application within the cluster.
     
 
 * **Container Orchestration:**
     
 
-* Kubernetes orchestrates the deployment, scaling, and management of the Docker containers.
+  Kubernetes orchestrates the deployment, scaling, and management of the Docker containers.
     
-* Deployed containers include the Java web application and other required components.
+  Deployed containers include the Java web application and other required components.
     
 
 * **Web Application Deployment:**
     
 
-* The Java web application is hosted on Tomcat within the Kubernetes cluster.
+  The Java web application is hosted on Tomcat within the Kubernetes cluster.
     
 
 **FIRST OVERVIEW (TRADITIONAL DEPLOYMENT):**
@@ -157,31 +157,31 @@ Automated Web App Deployment: CI/CD with Kubernetes and Docker
 1.  **Webhook Integration:**
     
 
-* Configure a webhook in the GitHub repository to trigger Jenkins builds on code changes.
+Configure a webhook in the GitHub repository to trigger Jenkins builds on code changes.
     
 
 3.  **Jenkins Jobs:**
     
 
-* Create Jenkins jobs for building and deploying the web application.
+Create Jenkins jobs for building and deploying the web application.
     
-* Define build steps and post-build actions.
+Define build steps and post-build actions.
     
 
 5.  **Automated Deployment:**
     
 
-* Jenkins deploys the built .war file to the configured Tomcat server automatically.
+Jenkins deploys the built .war file to the configured Tomcat server automatically.
     
 
 **Source Code Management**
 
-* The source code is managed using Git and hosted on GitHub: [GitHub Repository](https://github.com/Muthu-jr?tab=repositories).
+The source code is managed using Git and hosted on GitHub: [GitHub Repository](https://github.com/Muthu-jr?tab=repositories).
     
 
 **Infrastructure as Code (IaC)**
 
-* The infrastructure setup (Jenkins, Tomcat, VM configurations) is manually performed in this documentation. However, consider adopting Infrastructure as Code tools like Ansible or Terraform for more automated and scalable infrastructure management.
+The infrastructure setup (Jenkins, Tomcat, VM configurations) is manually performed in this documentation. However, consider adopting Infrastructure as Code tools like Ansible or Terraform for more automated and scalable infrastructure management.
     
 
   
@@ -193,19 +193,19 @@ Q: How can I troubleshoot Jenkins build failures?
 * **Q: What should I check in the Jenkins console output when a build fails?**
     
 
-* A: Inspect the console output for error messages, which often provide details about the cause of the failure.
+ A: Inspect the console output for error messages, which often provide details about the cause of the failure.
     
 
 * **Q: What steps can I take if the Jenkins job fails during the "Build" stage?**
     
 
-* A: Review the build configurations, check for missing dependencies, and ensure that the necessary tools are available in the Jenkins environment.
+ A: Review the build configurations, check for missing dependencies, and ensure that the necessary tools are available in the Jenkins environment.
     
 
 * **Q: How do I address issues related to Git repository connectivity during the build process?**
     
 
-* A: Confirm that the Jenkins server has the correct Git credentials and permissions to access the repository. Verify network connectivity to the Git server.
+  A: Confirm that the Jenkins server has the correct Git credentials and permissions to access the repository. Verify network connectivity to the Git server.
     
 
 **Q: What should I do if the application fails to deploy on Tomcat?**
@@ -213,19 +213,19 @@ Q: How can I troubleshoot Jenkins build failures?
 * Q: How do I troubleshoot Tomcat deployment failures?
     
 
-* A: Check Tomcat logs (catalina.out or catalina.log) for error messages. Verify that the .war file is correctly generated, and ensure proper configuration of Tomcat's server.xml and context.xml.
+  A: Check Tomcat logs (catalina.out or catalina.log) for error messages. Verify that the .war file is correctly generated, and ensure proper configuration of Tomcat's server.xml and context.xml.
     
 
 * Q: What steps can I take if Tomcat reports port conflicts during deployment?
     
 
-* A: Identify and resolve port conflicts by adjusting Tomcat's configuration. Ensure that the specified ports are available and not used by other applications.
+  A: Identify and resolve port conflicts by adjusting Tomcat's configuration. Ensure that the specified ports are available and not used by other applications.
     
 
 * Q: How can I verify the integrity of the generated .war file before deploying on Tomcat?
     
 
-* A: Manually attempt to deploy the .war file on Tomcat outside of the Jenkins pipeline. Check for any deployment errors and ensure that the file is not corrupted.
+  A: Manually attempt to deploy the .war file on Tomcat outside of the Jenkins pipeline. Check for any deployment errors and ensure that the file is not corrupted.
     
 
 **Q: What should I do if the GitHub webhook integration is not triggering Jenkins builds?**
@@ -233,13 +233,13 @@ Q: How can I troubleshoot Jenkins build failures?
 * Q: How can I troubleshoot webhook issues between GitHub and Jenkins?
     
 
-* A: Review GitHub webhook settings, ensure the webhook URL is correct, and check for any errors in the Jenkins GitHub plugin configuration. Inspect Jenkins logs for webhook-related messages.
+  A: Review GitHub webhook settings, ensure the webhook URL is correct, and check for any errors in the Jenkins GitHub plugin configuration. Inspect Jenkins logs for webhook-related messages.
     
 
 * Q: What steps can I take if the Jenkins server fails to receive payload from GitHub?
     
 
-* A: Check for network issues, ensure that the Jenkins server is reachable from GitHub, and verify that the GitHub webhook payload delivery is not blocked by firewalls.
+  A: Check for network issues, ensure that the Jenkins server is reachable from GitHub, and verify that the GitHub webhook payload delivery is not blocked by firewalls.
     
 
 **Q: How can I troubleshoot Maven build process issues?**
@@ -247,13 +247,13 @@ Q: How can I troubleshoot Jenkins build failures?
 * Q: What should I do if Maven encounters dependency resolution problems?
     
 
-* A: Update Maven dependencies using the mvn clean install -U command. Verify repository connectivity, and ensure that artifact names and versions in the pom.xml are accurate.
+  A: Update Maven dependencies using the mvn clean install -U command. Verify repository connectivity, and ensure that artifact names and versions in the pom.xml are accurate.
     
 
 * Q: How do I address issues related to missing plugins during the Maven build?
     
 
-* A: Confirm that the necessary Maven plugins are specified in the pom.xml file. Check that the Jenkins environment has the required Maven installations and configurations.
+  A: Confirm that the necessary Maven plugins are specified in the pom.xml file. Check that the Jenkins environment has the required Maven installations and configurations.
     
 
 **Q: What should I do if the Jenkins server runs out of disk space?**
@@ -261,13 +261,13 @@ Q: How can I troubleshoot Jenkins build failures?
 * Q: How can I troubleshoot disk space issues on the Jenkins server?
     
 
-* A: Implement build retention policies, periodically audit Jenkins workspaces, and clean up old builds. Consider expanding disk space or relocating Jenkins workspaces to a larger storage volume.
+  A: Implement build retention policies, periodically audit Jenkins workspaces, and clean up old builds. Consider expanding disk space or relocating Jenkins workspaces to a larger storage volume.
     
 
 * Q: What steps can I take to prevent future disk space issues?
     
 
-* A: Regularly monitor disk space usage, set up alerts for low disk space, and configure Jenkins to clean up outdated builds and artifacts automatically.
+  A: Regularly monitor disk space usage, set up alerts for low disk space, and configure Jenkins to clean up outdated builds and artifacts automatically.
     
 
 **SECOND OVERVIEW(DOCKERZIED DEPLOYMENT)**
@@ -411,55 +411,55 @@ Answer: Jenkins provides a user-friendly dashboard where you can monitor each st
 * **Containerization (Docker)**
     
 
-* Install Docker on the Jenkins server.
+  Install Docker on the Jenkins server.
     
-* Configure Jenkins to build Docker images.
+  Configure Jenkins to build Docker images.
     
 
 * **Configuration Management (Ansible)**
     
 
-* Install Ansible on the configuration management server.
+  Install Ansible on the configuration management server.
     
-* Create Ansible playbooks for setting up the target environment.
+  Create Ansible playbooks for setting up the target environment.
     
 
 * **Container Orchestration (Kubernetes)**
     
 
-* Install and configure a Kubernetes cluster.
+  Install and configure a Kubernetes cluster.
     
-* Deploy the Java web application using Kubernetes manifests.
+  Deploy the Java web application using Kubernetes manifests.
     
 
 * **Configuration**
     
 
-* Configure Jenkins with GitHub credentials for source code integration.
+  Configure Jenkins with GitHub credentials for source code integration.
     
-* Define Maven build configurations within Jenkins jobs.
+  Define Maven build configurations within Jenkins jobs.
     
-* Configure Docker within Jenkins for building and pushing Docker images.
+  Configure Docker within Jenkins for building and pushing Docker images.
     
-* Set up Ansible playbooks for configuring the target environment.
+  Set up Ansible playbooks for configuring the target environment.
     
-* Define Kubernetes manifests for deploying the application.
+  Define Kubernetes manifests for deploying the application.
     
 
 * **Continuous Integration/Continuous Deployment (CI/CD)**
     
 
-* Jenkins triggers automated builds on code commits.
+  Jenkins triggers automated builds on code commits.
     
-* Successful builds initiate Docker image creation and push to the registry.
+  Successful builds initiate Docker image creation and push to the registry.
     
-* Automated deployment to Kubernetes is triggered after successful Docker image creation.
+  Automated deployment to Kubernetes is triggered after successful Docker image creation.
     
 
 * **Infrastructure as Code (IaC)**
     
 
-* Ansible playbooks automate the setup and configuration of the target environment.
+  Ansible playbooks automate the setup and configuration of the target environment.
     
 
 **TROUBLESHOOTING AND FAQs**
