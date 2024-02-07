@@ -17,8 +17,8 @@
   </properties>
 
   <modules>
-    <module>Server</module>
-    <module>web app</module>
+    <module>server</module>
+    <module>webapp</module>
   </modules>
 
   <distributionManagement>
